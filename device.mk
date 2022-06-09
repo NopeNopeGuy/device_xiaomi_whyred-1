@@ -5,19 +5,8 @@
 #
 
 DEVICE_PATH := device/xiaomi/whyred
-
-# Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-PRODUCT_COMPRESSED_APEX := false
-
-# Platform
-PRODUCT_BOARD_PLATFORM := sdm660
-PRODUCT_USES_QCOM_HARDWARE := true
-
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
