@@ -160,6 +160,9 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+BOARD_HAVE_IR := true
+BOARD_HAVE_QCOM_FM := true
+
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
