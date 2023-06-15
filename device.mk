@@ -21,7 +21,7 @@ PRODUCT_USES_QCOM_HARDWARE := true
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-aosp
+    $(DEVICE_PATH)/overlay-awaken
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -220,9 +220,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
-# Gcam
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
 
 # GPS / Location
 PRODUCT_PACKAGES += \
