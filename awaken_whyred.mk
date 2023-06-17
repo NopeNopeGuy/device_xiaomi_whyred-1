@@ -19,7 +19,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := awaken_whyred
-PRODUCT_MODEL := Redmi Note 5 Pro
+PRODUCT_MODEL := Redmi Note 5
 
 # PixelExperience Properties
 TARGET_INCLUDE_WIFI_EXT := true
