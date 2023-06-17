@@ -105,12 +105,8 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 KERNEL_PREBUILT_PATH := device/xiaomi/bouquet-kernel
 
 # Kernel
-LOCAL_KERNEL := $(KERNEL_PREBUILT_PATH)/Image.gz-dtb
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
 TARGET_PREBUILT_KERNEL:= $(KERNEL_PREBUILT_PATH)/Image.gz-dtb
 TARGET_FORCE_PREBUILT_KERNEL:= true
-# Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_BASE := 0x00000000
